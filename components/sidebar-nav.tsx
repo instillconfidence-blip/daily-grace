@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { Home, Heart, Music, FileText, Sun, Menu, X } from "lucide-react"
+import { Home, Heart, Music, FileText, Sun, Menu, X, Download, Users, User } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { useState } from "react"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
@@ -12,6 +12,9 @@ const navItems = [
   { href: "/devotionals", label: "Devotionals", icon: Heart, desc: "Daily readings" },
   { href: "/music", label: "Music", icon: Music, desc: "Worship songs" },
   { href: "/journal", label: "Journal", icon: FileText, desc: "Reflect & write" },
+  { href: "/downloads", label: "Downloads", icon: Download, desc: "Member guides" },
+  { href: "/community", label: "Community", icon: Users, desc: "Connect & share" },
+  { href: "/account", label: "Account", icon: User, desc: "Membership & billing" },
 ]
 
 function NavContent({ onClose }: { onClose?: () => void }) {
